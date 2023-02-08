@@ -6,24 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
 
 <body>
+    <!-- container for header and main sections -->
     <div class="container">
 
+        <!-- header on the left includes the logo and the nav bar-->
         <header>
             <div class="main-logo">
                 <img src="img/logo.svg" alt="logo">
             </div>
 
+            <!-- nav bar (navside)  is divided into 3 sections, top, playlist and bottom-->
             <nav class="nav-side">
 
                 <div class="nav-side-top">
@@ -90,14 +95,17 @@
         </header>
 
 
-
+        <!-- inizio main -->
         <main>
-          
+           
+            <!-- upgrade bar at the top -->
             <div class="upgrade">
                 <button class="btn">EFFETTUA L'UPGRADE</button>
             </div>
 
+            <!-- content is divided into 2 sections, a nav bar at the top and a bigger central area with cards -->
             <div class="content">
+
                 <div class="nav-main">
                     <ul>
                         <li>IN EVIDENZA</li>
@@ -110,12 +118,17 @@
                 </div>
 
                 <div class="playlist">
+
                     <div class="row recent">
+
                         <div class="col-text">
                             <h2>Recently Played</h2>
                         </div>
+
                         <div class="col-album">
+
                             <div class="card">
+
                                 <div class="card-img">
                                     <img src="img/metal_lifting.jpg" alt="">
                                 </div>
@@ -123,8 +136,11 @@
                                     <h3>Heavy Metal</h3>
                                     <h4>subtitle</h4>
                                 </div>
+
                             </div>
+
                             <div class="card">
+
                                 <div class="card-img">
                                     <img src="img/stranger.jpeg" alt="">
                                 </div>
@@ -132,8 +148,11 @@
                                     <h3>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
                                     <h4>Kyle Dixon & Michael Stein</h4>
                                 </div>
+
                             </div>
+
                             <div class="card">
+
                                 <div class="card-img">
                                     <img src="img/aquietplace.jpeg" alt="">
                                 </div>
@@ -141,8 +160,11 @@
                                     <h3>A quiet place</h3>
                                     <h4>subtitle</h4>
                                 </div>
+
                             </div>
+
                             <div class="card">
+
                                 <div class="card-img">
                                     <img src="img/split.jpeg" alt="">
                                 </div>
@@ -151,7 +173,9 @@
                                     <h4>subtitle</h4>
                                 </div>
                             </div>
+
                             <div class="card">
+
                                 <div class="card-img">
                                     <img src="img/cure.jpeg" alt="">
                                 </div>
@@ -159,8 +183,11 @@
                                     <h3>A cure for wellness</h3>
                                     <h4>subtitle</h4>
                                 </div>
+
                             </div>
+
                             <div class="card">
+
                                 <div class="card-img">
                                     <img src="img/sinister.jpeg" alt="">
                                 </div>
@@ -168,16 +195,24 @@
                                     <h3>Sinister</h3>
                                     <h4>subtitle</h4>
                                 </div>
+
                             </div>
+
                         </div>
+
                     </div>
 
                     <div class="row suggested">
+
                         <div class="col-text">
                             <h2>Creato per John Doe</h2>
+                            <h4>Più ascolti, più accurati saranno i suggerimenti</h4>
                         </div>
+
                         <div class="col-album">
+
                             <div class="card">
+
                                 <div class="card-img">
                                     <img src="img/radar.jpeg" alt="">
                                 </div>
@@ -185,8 +220,11 @@
                                     <h3>Release Radar</h3>
                                     <h4>subtitle</h4>
                                 </div>
+
                             </div>
+
                             <div class="card">
+
                                 <div class="card-img">
                                     <img src="img/mixdaily.jpeg" alt="">
                                 </div>
@@ -194,36 +232,47 @@
                                     <h3>Daily Mix 1</h3>
                                     <h4>subtitle</h4>
                                 </div>
+
                             </div>
 
                         </div>
+
                     </div>
 
                     <div class="row best">
+
                         <div class="col-text">
                             <h2>Artisti più popolari</h2>
+                            <h4>Più ascolti, più accurati saranno i suggerimenti</h4>
                         </div>
+
                         <div class="col-album">
+
                             <div class="card">
-                                <div class="card-img">
+
+                                <div class="card-img round">
                                     <img src="img/einaudi.jpeg" alt="">
                                 </div>
                                 <div class="card-text">
-                                    <h3>metal</h3>
-                                    <h4>subtitle</h4>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="img/youg.jpeg" alt="">
-                                </div>
-                                <div class="card-text">
-                                    <h3>metal</h3>
+                                    <h3>Einaudi</h3>
                                     <h4>subtitle</h4>
                                 </div>
                             </div>
 
+                            <div class="card">
+
+                                <div class="card-img round">
+                                    <img src="img/youg.jpeg" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Lana del Rey</h3>
+                                    <h4>subtitle</h4>
+                                </div>
+
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
 
@@ -252,8 +301,8 @@
             </div>
 
             <div class="left-icons">
-                <i class="fa-solid fa-house-chimney"></i>
-                <i class="fa-solid fa-house-chimney"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
             </div>
 
         </div>
@@ -261,16 +310,16 @@
         <div class="play mid">
 
             <div class="mid-buttons">
-                <i class="fa-solid fa-house-chimney"></i>
-                <i class="fa-solid fa-house-chimney"></i>
-                <i class="fa-solid fa-house-chimney"></i>
-                <i class="fa-solid fa-house-chimney"></i>
-                <i class="fa-solid fa-house-chimney"></i>
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-arrow-rotate-left"></i>
             </div>
 
             <div class="track-bar">
 
-                <div class="progress">0:15</div>
+                <div class="progress">0:30</div>
 
                 <div class="bar-wrapper">
                     <div class="whole-bar">
@@ -284,10 +333,9 @@
 
         </div>
 
+        <div class="play right">
 
-        <div class="play right"></div>
-
-
+        </div>
 
     </footer>
     

@@ -118,6 +118,7 @@ main .content .nav-main{
     text-align: center;
     color: rgb(104, 106, 112);
 
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,6 +339,8 @@ footer{
     border-radius: 1.5px;
 }
 
+
+
 /* MQ 1 */
 @media screen and (max-width: 900px) and (min-width: 769px) {
 
@@ -446,3 +449,40 @@ main .content .nav-main ul{
     }
 
 } 
+
+/* test */
+.effect{
+    position: relative;
+}
+
+.effect i{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+
+}
+
+.effect:hover i{
+    display: inline-block;
+    opacity: 100%;
+
+}
+
+.effect:hover img{
+    opacity: 0.2;
+}
+
+
+main .content .nav-main ul li:hover,
+.nav-side .shadow:hover,
+.nav-side-playlist ul li:hover{
+    color: silver;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.452);
+}
+   
+
+/* transform: scale(120%); */
+        /* transition: opacity 2s ease-in-out; */

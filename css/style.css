@@ -109,6 +109,7 @@ main .upgrade .btn{
 main .content{
     height: 90%;
     background-color: rgb(20, 25, 34);
+    overflow-y: scroll;
     /* display: flex;
     flex-direction: column; */
 }
@@ -138,19 +139,13 @@ main .content .nav-main ul{
 /* inizio playlist central content */
 main .content .playlist{
     height: 95%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 
-    /* margin: 15px; */
-    /* display: flex;
-    flex-direction: column;
-    gap: 35px; */
 }
 
 .row{
     padding: 15px 10px;
     margin-top: 15px;
-    /* height: 300px; */
-    /* width: 100%; */
 
     display: flex;
     flex-direction: column;
@@ -377,7 +372,14 @@ footer{
 }
 
 .playbar{
+    gap: 10px;
+}
+  
+main .content .nav-main ul{
+    flex-wrap: wrap;
     gap: 15px;
 }
 
+main .content .nav-main ul li{
+    width: calc(100% / 5);
 }

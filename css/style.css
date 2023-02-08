@@ -110,8 +110,6 @@ main .content{
     height: 90%;
     background-color: rgb(20, 25, 34);
     overflow-y: scroll;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 main .content .nav-main{
@@ -139,8 +137,6 @@ main .content .nav-main ul{
 /* inizio playlist central content */
 main .content .playlist{
     height: 95%;
-    /* overflow-y: scroll; */
-
 }
 
 .row{
@@ -161,10 +157,7 @@ main .content .playlist{
 
 .col-album{
     height: 85%;
-
     display: flex;
-    justify-content: flex-start;
-    /* gap: 10px; */
 }
 
 .card{
@@ -345,12 +338,18 @@ footer{
     border-radius: 1.5px;
 }
 
-@media screen and (max-width: 768px) and (min-width: 500px) {
+/* MQ 1 */
+@media screen and (max-width: 900px) and (min-width: 769px) {
+
+    main .content .nav-main ul{
+        width: 90%;
+    } 
+}
+
+/* MQ 2 */
+@media screen and (max-width: 768px) and (min-width: 577px) {
     
 .col-album{
-    height: 85%;
-    display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -374,12 +373,76 @@ footer{
 .playbar{
     gap: 10px;
 }
-  
-main .content .nav-main ul{
-    flex-wrap: wrap;
-    gap: 15px;
+
+main .content .nav-main{
+    height: 10%;
 }
 
-main .content .nav-main ul li{
-    width: calc(100% / 5);
+main .content .playlist{
+    height: 90%;
 }
+
+main .content .nav-main ul{
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 15px;
+    gap: 19px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .col-album{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        width: calc(100% / 2);
+        margin-bottom: 20px;
+    }
+
+    .card-text h3{
+        font-size: 12.5px;
+    }
+    
+    .card-text h4{
+        font-size: 11px;
+    }
+
+    main .content .nav-main{
+        height: 10%;
+    }
+    
+    main .content .playlist{
+        height: 90%;
+    }
+    
+    main .content .nav-main ul{
+        font-size: 12px;
+        padding: 10px;
+        margin-top: 15px;
+        gap: 19px;
+    
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main .upgrade{
+        height: 5%;
+    }
+    
+    main .upgrade .btn{
+        right: 80px;
+        top: 5px;
+    }
+    
+    main .content{
+        height: 95%;
+        overflow-y: scroll;
+    }
+
+} 

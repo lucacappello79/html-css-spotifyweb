@@ -222,14 +222,14 @@ footer{
 } */
 
 .play.left, .play.right{
-    max-width: 280px;
+    max-width: 240px;
     width: 100%;
 }
 
 .play.left{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     padding: 7px 10px;
 }
 
@@ -257,7 +257,7 @@ footer{
 
 .play.left .left-icons{
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 .play.left .left-icons i{
@@ -301,7 +301,7 @@ footer{
 }
 
 .whole-bar{
-    background-color: burlywood;
+    background-color: rgb(69, 69, 69);
     height: 3px;
     border-radius: 1.5px;
     width: 100%;
@@ -325,7 +325,7 @@ footer{
 .right-icons{
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 15px;
 }
 
 .right-icons i{
@@ -350,4 +350,34 @@ footer{
     border-radius: 1.5px;
 }
 
+@media screen and (max-width: 768px) and (min-width: 500px) {
+    
+.col-album{
+    height: 85%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
 
+.card{
+    width: calc(100% / 4);
+    margin-bottom: 20px;
+}
+
+.card-text h3{
+    font-size: 12.5px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card-text h4{
+    font-size: 11px;
+}
+
+.playbar{
+    gap: 15px;
+}
+
+}

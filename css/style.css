@@ -104,8 +104,9 @@ main .upgrade .btn{
     font-weight: bold;
     opacity: 0.8;
 
-    box-shadow: rgb(241, 239, 239) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgb(241, 239, 239) 0px 5px 5px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transition: 1s ease;
+    /* era 0 10 20 invece di 0 5 5 */
 }
 
 /* <!-- content is divided into 2 sections, a nav bar at the top and a bigger central area with cards --> */

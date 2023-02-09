@@ -411,6 +411,51 @@ main .content .nav-main ul{
     }
 } 
 
+@media screen and (max-width: 575px) {
+
+    hr, .install-text, .user-text, .home-text, .find-text, .library-text, .nav-side-playlist{
+        display:none;
+    }
+
+    .card{
+        width: calc(100% / 2 - (15px / 2 * 1));
+        margin-bottom: 20px;
+    }
+
+    .card-text h3{
+        font-size: 12.5px;
+    }
+    
+    .card-text h4{
+        font-size: 11px;
+    }
+    
+    main .content .nav-main ul{
+        flex-wrap: wrap;
+    }
+    
+    .play.mid{
+        max-width: 400px;
+    }
+    
+    .play.mid .track-bar{
+        gap: 5px;
+        font-size: .6em;
+    }
+    
+    .play.left .left-icons{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    .play.left, .play.right{
+        max-width: 220px;
+        width: 100%;
+    }
+
+}
+
 /* test */
 
 /* transform: scale(120%); */

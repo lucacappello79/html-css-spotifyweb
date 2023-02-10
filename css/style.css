@@ -35,7 +35,22 @@ a{
 }
 
 .nav-main ul li{
+    position: relative;
     color: rgb(104, 106, 112);
+}
+
+.nav-main ul li:hover::before{
+    
+    width: 28px;
+    height: 2px;
+    background-color: rgb(107, 213, 41);
+
+    content: ""; 
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 /* <!-- container for header and main sections --> */

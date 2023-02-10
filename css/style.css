@@ -8,6 +8,35 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+ /* scrollbar */
+
+main::-webkit-scrollbar {
+    width: 0.7em;
+    background-color: #242424;
+  }
+   
+  main::-webkit-scrollbar-thumb {
+    background-color: #4a4a4a;
+    border-radius: 100vh;
+  }
+   
+  main::-webkit-scrollbar-thumb:hover {
+    background-color: #aeaeae;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-side-playlist ul li, .nav-side-top .home,
+.nav-side-top .find, .nav-side-top .library{
+    color: rgb(109, 109, 109);
+    text-decoration: none;  
+}
+
+.nav-main ul li{
+    color: rgb(104, 106, 112);
+}
 
 /* <!-- container for header and main sections --> */
 .container{
@@ -109,7 +138,7 @@ main .upgrade .btn{
     font-weight: bold;
     opacity: .8;
 
-    box-shadow: rgb(241, 239, 239) 0px 5px 5px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgb(141, 140, 146) 0px 5px 5px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transition: 1s ease;
 }
 
@@ -464,7 +493,12 @@ main .content .nav-main ul{
         width: 100%;
         /* max-width: 180px; */
         min-width: 80px;
+        /* max-width: 150px; */
     }
+/* 
+    .play.right{
+        max-width: 200px;
+    } */
 
     .nav-side{
         height: calc(50% - 80px);
@@ -495,15 +529,15 @@ main .content .nav-main ul{
 
 }
 
-/* test */
+/* Effects */
 
-/* transform: scale(120%); */
-/* transition: opacity 2s ease-in-out; */
+.mid-buttons i{
+    transition: transform .3s ease-in-out;
+}
 
-/* .btn{
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    transition: 1s ease;
-} */
+.mid-buttons i:hover{
+    transform: scale(140%);
+ }
 
 .effect{
     position: relative;

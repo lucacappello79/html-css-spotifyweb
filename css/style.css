@@ -58,9 +58,9 @@ header{
     font-size: 2em;
 }
 
-.nav-side-bottom .user, .nav-side-playlist h3,{
+/* .nav-side-top .home, .nav-side-bottom .user, .nav-side-playlist h3{
     color: white;
-}
+} */
 
 .nav-side-playlist ul{
     list-style-type: none;
